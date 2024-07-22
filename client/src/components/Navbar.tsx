@@ -9,7 +9,7 @@ function Navbar() {
   //get login user
   const fetchUserDetails = async () => {
     try {
-      const response = await fetch('http://localhost:4000/profile/getUser', {
+      const response = await fetch(`${import.meta.env.VITE_ORIGIN}/profile/getUser`, {
         method: 'GET',
         credentials: 'include'
       })
@@ -23,7 +23,7 @@ function Navbar() {
   // User logout function
   const handleLogOut = async () => {
     if (!userDetails) return 'User is alerady logout'
-    await fetch('http://localhost:4000/profile/logout', {
+    await fetch(`${import.meta.env.VITE_ORIGIN}/profile/logout`, {
       method: 'POST',
       credentials: 'include'
     })

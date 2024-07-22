@@ -25,7 +25,7 @@ function Login() {
             const { usernameOrEmail, password } = loginUserData;
             let loginInput;
             { usernameOrEmail.includes('@') ? loginInput = { email: usernameOrEmail, password } : loginInput = { username: usernameOrEmail, password } }
-            const response = await fetch('http://localhost:4000/profile/login', {
+            const response = await fetch(`${import.meta.env.VITE_ORIGIN}/profile/login`, {
                 method: 'POST',
                 credentials: 'include',
                 headers: {

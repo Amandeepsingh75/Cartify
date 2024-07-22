@@ -29,7 +29,7 @@ const Register =()=>{
         formData.append("username", userData.username);
         formData.append("email", userData.email);
         formData.append("password", userData.password);
-       const response= await fetch('http://localhost:4000/profile/register',{
+        const response = await fetch(`${import.meta.env.VITE_ORIGIN}/profile/register`,{
             method:'POST',
             body: formData
         })

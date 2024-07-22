@@ -29,7 +29,7 @@ const AddProducts = () => {
             formData.append("productName", userData.productName);
             formData.append("description", userData.Description);
             formData.append("price", userData.price);
-            let response = await fetch('http://localhost:4000/product/add-products', {
+            let response = await fetch(`${import.meta.env.VITE_ORIGIN}/product/add-products`, {
                 method: 'POST',
                 body: formData
             })
