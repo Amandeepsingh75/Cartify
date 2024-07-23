@@ -16,7 +16,7 @@ interface CartProps {
     setOpen: (arg: boolean) => void
     setCartProducts?: (arg: any) => void
 }
-const Cart: React.FC<CartProps> = ({ cartProducts, setCartProducts, open, setOpen }) => {
+const Cart: React.FC<CartProps> = ({ cartProducts, open, setOpen }) => {
     const allProductsTotal = cartProducts?.map((e) => e.items?.price * e.quantity).reduce((acc, cur) => { return acc + cur }, 0)
     // const handleRemovefromCart = (index:number) => {
     //     setCartProducts(cartProducts?.filter((_, i) => i !== index))

@@ -56,7 +56,7 @@ const Products = () => {
                             description={item?.description}
                             price={item?.price}
                             quantity={1}
-                            handleAddtoCart={(productName, productImage, price, quantity) => handleAddtoCart(item, quantity)}
+                            handleAddtoCart={(quantity) => handleAddtoCart(item, quantity)}
                         />))
                     : [1, 2, 3, 4, 5].map((_, i) => {
                         return <Skeleton key={i} />
