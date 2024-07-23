@@ -11,7 +11,6 @@ const Products = () => {
     const [cartProducts, setCartProducts] = useState<any>([])
     const [open, setOpen] = useState(false)
 
-    console.log(import.meta.env.VITE_ORIGIN)
 
     const fetchProducts = async () => {
         await fetch(`${import.meta.env.VITE_ORIGIN}/product/get-products`, { method: 'GET' })
