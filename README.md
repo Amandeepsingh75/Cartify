@@ -63,6 +63,7 @@ To get started with Cartify, you need the following tools and knowledge:
   "@heroicons/react": "^2.0.0"
 }
 
+
 **Backend Dependencies**
 
 {
