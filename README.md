@@ -50,86 +50,90 @@ To get started with Cartify, you need the following tools and knowledge:
 - **Cloudinary**: Service for image and video management.
 - **Github**: For continuous integration and deployment.
 
-### Dependencies
+## Dependencies
 
-**Frontend Dependencies**
+1. Frontend Dependencies:
 
-```json
-{
-  "react": "^18.0.0",
-  "vite": "^4.0.0",
-  "react-toastify": "^9.0.0",
-  "@headlessui/react": "^1.7.0",
-  "@heroicons/react": "^2.0.0"
-}
+   ```bash
+   "react": "^18.0.0",
+    "vite": "^4.0.0",
+    "react-toastify": "^9.0.0",
+    "@headlessui/react": "^1.7.0",
+    "@heroicons/react": "^2.0.0"
 
+1. Backend Dependencies:
 
-**Backend Dependencies**
-
-{
-  "express": "^4.19.2",
-  "mongoose": "^8.4.4",
-  "cloudinary": "^2.2.0",
-  "jsonwebtoken": "^9.0.2",
-  "multer": "^1.4.5",
-  "nodemon": "^3.1.4",
-  "dotenv": "^16.4.5",
-  "cors": "^2.8.5",
-  "cookie-parser": "^1.4.6"
-}
-
+   ```bash
+   "express": "^4.19.2",
+    "mongoose": "^8.4.4",
+    "cloudinary": "^2.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5",
+    "nodemon": "^3.1.4",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "cookie-parser": "^1.4.6"
+  
 ## Installation
 
-To get started with Cartify, follow these steps:
+To run NewTube locally, follow these steps:
 
-### 1. Clone the Repository
+1. Clone the repository:
 
-```bash
-git clone https://github.com/Amandeepsingh75/cartify.git
-cd cartify
+   ```bash
+   git clone https://github.com/Amandeepsingh75/cartify.git
+   cd cartify
 
-**Install server(backend) Dependencies**
+2. Install server(backend) Dependencies:
 
-```bash
-cd server
-npm install
+   ```bash
+   cd server
+   npm install
 
-**Install client(frontend) Dependencies**
+3. Install client(frontend) Dependencies
 
-```bash
-cd client
-npm install
+   ```bash
+   cd client
+   npm install
 
-### 2. Configurations
+4. Configurations:
 
-**server .env**
+   ```bash
+   **server .env**
 
-```bash
-PORT=4000
-CORS_ORIGIN:your_cors_origin
-MONGO_URI=your_mongodb_connection_string
-ACCESS_TOKEN_SECRET=your_access_token_secret
-ACCESS_TOKEN_EXPIRE=10d
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
-CLOUDINARY_NAME=your_cloud_name
-CLOUDINARY_KEY=your_api_key
-CLOUDINARY_SECRET_KEY=your_api_secret
+   PORT=4000
+   CORS_ORIGIN:your_cors_origin
+   MONGO_URI=your_mongodb_connection_string
+   ACCESS_TOKEN_SECRET=your_access_token_secret
+   ACCESS_TOKEN_EXPIRE=10d
+   REFRESH_TOKEN_SECRET=your_refresh_token_secret
+   CLOUDINARY_NAME=your_cloud_name
+   CLOUDINARY_KEY=your_api_key
+   CLOUDINARY_SECRET_KEY=your_api_secret
 
-**client .env**
+   **client .env**
 
-VITE_ORIGIN=your_backend_origin
+   PORT=4000
+   CORS_ORIGIN:your_cors_origin
+   MONGO_URI=your_mongodb_connection_string
+   ACCESS_TOKEN_SECRET=your_access_token_secret
+   ACCESS_TOKEN_EXPIRE=10d
+   REFRESH_TOKEN_SECRET=your_refresh_token_secret
+   CLOUDINARY_NAME=your_cloud_name
+   CLOUDINARY_KEY=your_api_key
+   CLOUDINARY_SECRET_KEY=your_api_secret
 
-### 3. Start the Application
+5. Start the Application
 
-```bash
-server(backend)= cd server -> npm run dev
-client(frontend)= cd client -> npm run dev
+    ```bash
+   server(backend)= cd server -> npm run dev
+   client(frontend)= cd client -> npm run dev
 
 ### Deployment
 
   -> https://cartify-app.onrender.com/
 
-### Contributing
+Contributing
 
 We welcome contributions to Cartify! If you would like to contribute, please follow these steps:
 
@@ -139,6 +143,6 @@ We welcome contributions to Cartify! If you would like to contribute, please fol
    4. Push to the branch (git push origin feature/YourFeature).
    5. Create a new Pull Request.
 
-### License
+License
 
 Cartify is licensed under the MIT License
