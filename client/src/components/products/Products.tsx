@@ -35,6 +35,7 @@ const Products = () => {
             }
         }
     }
+    console.log(cartProducts)
     return (
         <>
 
@@ -56,7 +57,7 @@ const Products = () => {
                             description={item?.description}
                             price={item?.price}
                             quantity={1}
-                            handleAddtoCart={(quantity) => handleAddtoCart(item, quantity)}
+                            handleAddtoCart={(_a,_b,_c,quantity) => handleAddtoCart(item, quantity)}
                         />))
                     : [1, 2, 3, 4, 5].map((_, i) => {
                         return <Skeleton key={i} />
