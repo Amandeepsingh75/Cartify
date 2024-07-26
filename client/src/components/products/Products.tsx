@@ -35,7 +35,6 @@ const Products = () => {
             }
         }
     }
-    console.log(cartProducts)
     return (
         <>
 
@@ -50,13 +49,14 @@ const Products = () => {
                 {products?.length > 0 ?
                     products?.filter((data: { productName: string }) => {
                         return searchValue == '' ? data : data.productName.toLowerCase().includes(searchValue.toLowerCase())
-                    }).map((item: { productName: string; productImage: string; description: string; price: number }, i: number) => (
+                    }).map((item: { productName: string; productImage: string; description: string; price: number, user:string }, i: number) => (
                         <ProductCard key={i}
                             productName={item?.productName}
                             productImage={item?.productImage}
                             description={item?.description}
                             price={item?.price}
                             quantity={1}
+                            uploadedBy={item.user}
                             handleAddtoCart={(_a,_b,_c,quantity) => handleAddtoCart(item, quantity)}
                         />))
                     : [1, 2, 3, 4, 5].map((_, i) => {

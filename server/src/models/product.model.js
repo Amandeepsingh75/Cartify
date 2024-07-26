@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
 
+var {Schema} = mongoose
+
 const productSchema = new mongoose.Schema({
     productName:{
         type:String,
@@ -18,6 +20,10 @@ const productSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    user: {
+        type: Schema.Types.String,
+        ref: "User",
+    }
 
 }, {timestamps: true})
 
